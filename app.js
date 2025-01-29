@@ -67,7 +67,6 @@ return;
 
 function CreVarAleat() {
 let numeGen=Math.floor(Math.random()*numeroMax)+1; 
-if (numeroSorteado.length ==numeroMax){
     if (numeroSorteado.length == numeroMax) {
         numeroSorteado = []; // Vaciar la lista
         alert("¡Todos los números han sido sorteados! Reiniciando el juego...");
@@ -76,11 +75,11 @@ if (numeroSorteado.length ==numeroMax){
     }else{
     // Para entender mejor la sig parte se lee asi, si el numero generado esta en la lista, con la recursividad se vuelve a llamar y genera otro
     // numero hasta que el numero generaldo no este incluido en la lista
-    if (numeroSorteado.includes(numeGen)){
+        if (numeroSorteado.includes(numeGen)){
 
         return CreVarAleat();
 
-    } else{
+        } else{
     //si el numero no esta en la lista, guarda el numero en la lista y lo retorna
         numeroSorteado.push(numeGen);
         return numeGen;
@@ -89,5 +88,5 @@ if (numeroSorteado.length ==numeroMax){
     }
 
 }
-}
+
 CondicionesIni();
