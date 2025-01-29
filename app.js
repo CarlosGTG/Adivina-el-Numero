@@ -67,14 +67,12 @@ return;
 
 function CreVarAleat() {
 let numeGen=Math.floor(Math.random()*numeroMax)+1; 
-console.log(numeGen);
-console.log(numeroSorteado);
 if (numeroSorteado.length ==numeroMax){
     if (numeroSorteado.length == numeroMax) {
         numeroSorteado = []; // Vaciar la lista
         alert("¡Todos los números han sido sorteados! Reiniciando el juego...");
-        reiniciarG(); // Reiniciar el juego
-        return CreVarAleat(); // Generar un nuevo número secreto
+        reiniciarG();
+        return CreVarAleat(); 
     }else{
     // Para entender mejor la sig parte se lee asi, si el numero generado esta en la lista, con la recursividad se vuelve a llamar y genera otro
     // numero hasta que el numero generaldo no este incluido en la lista
