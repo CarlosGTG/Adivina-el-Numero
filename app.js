@@ -89,6 +89,5 @@ if (numeroSorteado.length ==numeroMax){
     }
 
 }
-
-CondicionesIni();
 }
+CondicionesIni();
